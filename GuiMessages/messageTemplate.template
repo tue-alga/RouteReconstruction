@@ -1,0 +1,19 @@
+class ${clsName} : public BaseMessage
+{
+protected:
+	${memberDefs}
+public:
+	${memberAccessors}
+
+	std::string type() const override { return ${typeNameQuoted};}
+
+	void encode(BytesBuffer& buff) const override
+	{
+		${encodeCode}
+	}
+	
+	void decode(BytesBuffer& buff) override
+	{
+		${decodeCode}
+	}
+};

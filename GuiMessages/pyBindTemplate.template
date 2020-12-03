@@ -1,0 +1,5 @@
+pybind11::class_<${clsName}>(mod, "${clsName}")
+    @{foreach p in parameters}
+    .def("${p['name']}", &${clsName}::${p.name}, &${clsName}::set${p.name|capitalize})
+    @{endforeach}
+    ;

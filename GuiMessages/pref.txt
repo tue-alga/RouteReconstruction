@@ -1,0 +1,7 @@
+#ifndef GUIMESSAGES_MESSAGES_H
+#define GUIMESSAGES_MESSAGES_H
+#include "BaseMessage.h"
+#include <LoopsLib/Algs/Types.h>
+
+namespace GuiMessages
+{

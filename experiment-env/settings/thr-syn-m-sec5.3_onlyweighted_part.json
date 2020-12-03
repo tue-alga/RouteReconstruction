@@ -1,0 +1,33 @@
+{
+    "name": "thr-syn-m-sec5.3_onlyweighted",
+    "problemInstance": {
+        "map": "thehague-small.osm",
+        "field": "thehague-small_med-noise_5000-paths.fieldtxt",
+        "pathSelect": {
+            "seed": 19385674,
+            "mode": "percentage",
+            "value": 0.05
+        },
+        "epsilon": 100,
+        "iterations": 2
+    },
+    "algs": {
+        "WeightedFrechetDecomposition": {
+            "noDataCaching": true,
+            "numberOfThreads": 1,
+            "maximumSearchTime": 120,
+            "maximumPerPath": 1,
+            "greedyAttachEnds": true
+        }
+    },
+    "runMode": "allPairs",
+    "runParameters": {
+        "problemInstance.pathSelect.value": [
+            0.05
+        ],
+        "problemInstance.pathSelect.seed": [
+            5054123,
+            451523
+        ]
+    }
+}

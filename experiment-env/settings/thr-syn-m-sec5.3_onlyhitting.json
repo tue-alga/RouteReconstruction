@@ -1,0 +1,39 @@
+{
+    "name": "thr-syn-m-sec5.3_onlyhitting",
+    "problemInstance": {
+        "map": "thehague-small.osm",
+        "field": "thehague-small_med-noise_5000-paths.fieldtxt",
+        "pathSelect": {
+            "seed": 19385674,
+            "mode": "percentage",
+            "value": 0.05
+        },
+        "epsilon": 100,
+        "iterations": 10
+    },
+    "algs": {
+        "FrechetHittingPathsDecomposition": {
+            "numberOfThreads": 1,
+            "pathsPerTrajectory": 2
+        }
+    },
+    "runMode": "allPairs",
+    "runParameters": {
+        "problemInstance.pathSelect.value": [
+            0.05,
+            0.1,
+            0.15,
+            0.2,
+            0.25
+        ],
+        "problemInstance.pathSelect.seed": [
+            5054123,
+            451523,
+            79826,
+            16514,
+            65316,
+            1254,
+            34608182
+        ]
+    }
+}
